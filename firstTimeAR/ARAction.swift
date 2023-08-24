@@ -5,4 +5,9 @@
 //  Created by Pablo Fernandez Gonzalez on 24/8/23.
 //
 
-import Foundation
+import SwiftUI
+
+enum ARAction {
+    case placeCity
+    case removeCity
+}

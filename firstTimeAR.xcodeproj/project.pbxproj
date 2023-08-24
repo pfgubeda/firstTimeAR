@@ -11,6 +11,11 @@
 		65997D8A2A97C9B300ED0DCF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65997D892A97C9B300ED0DCF /* ContentView.swift */; };
 		65997D8C2A97C9B300ED0DCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65997D8B2A97C9B300ED0DCF /* Assets.xcassets */; };
 		65997D8F2A97C9B300ED0DCF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65997D8E2A97C9B300ED0DCF /* Preview Assets.xcassets */; };
+		65997D962A97D04500ED0DCF /* FirstTryExperience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 65997D952A97D04500ED0DCF /* FirstTryExperience.rcproject */; };
+		65997D982A97D6C200ED0DCF /* ARManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65997D972A97D6C200ED0DCF /* ARManager.swift */; };
+		65997D9A2A97D73C00ED0DCF /* ARAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65997D992A97D73C00ED0DCF /* ARAction.swift */; };
+		65997D9E2A97DBF200ED0DCF /* CustomARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65997D9D2A97DBF200ED0DCF /* CustomARView.swift */; };
+		65997DA02A97DC2000ED0DCF /* CustomARViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65997D9F2A97DC2000ED0DCF /* CustomARViewRepresentable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		65997D892A97C9B300ED0DCF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		65997D8B2A97C9B300ED0DCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65997D8E2A97C9B300ED0DCF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		65997D952A97D04500ED0DCF /* FirstTryExperience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = FirstTryExperience.rcproject; sourceTree = "<group>"; };
+		65997D972A97D6C200ED0DCF /* ARManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARManager.swift; sourceTree = "<group>"; };
+		65997D992A97D73C00ED0DCF /* ARAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARAction.swift; sourceTree = "<group>"; };
+		65997D9D2A97DBF200ED0DCF /* CustomARView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomARView.swift; sourceTree = "<group>"; };
+		65997D9F2A97DC2000ED0DCF /* CustomARViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomARViewRepresentable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +63,13 @@
 			children = (
 				65997D872A97C9B300ED0DCF /* firstTimeARApp.swift */,
 				65997D892A97C9B300ED0DCF /* ContentView.swift */,
+				65997D952A97D04500ED0DCF /* FirstTryExperience.rcproject */,
 				65997D8B2A97C9B300ED0DCF /* Assets.xcassets */,
 				65997D8D2A97C9B300ED0DCF /* Preview Content */,
+				65997D972A97D6C200ED0DCF /* ARManager.swift */,
+				65997D992A97D73C00ED0DCF /* ARAction.swift */,
+				65997D9D2A97DBF200ED0DCF /* CustomARView.swift */,
+				65997D9F2A97DC2000ED0DCF /* CustomARViewRepresentable.swift */,
 			);
 			path = firstTimeAR;
 			sourceTree = "<group>";
@@ -137,8 +152,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65997D982A97D6C200ED0DCF /* ARManager.swift in Sources */,
+				65997D9A2A97D73C00ED0DCF /* ARAction.swift in Sources */,
 				65997D8A2A97C9B300ED0DCF /* ContentView.swift in Sources */,
+				65997D962A97D04500ED0DCF /* FirstTryExperience.rcproject in Sources */,
+				65997D9E2A97DBF200ED0DCF /* CustomARView.swift in Sources */,
 				65997D882A97C9B300ED0DCF /* firstTimeARApp.swift in Sources */,
+				65997DA02A97DC2000ED0DCF /* CustomARViewRepresentable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +290,7 @@
 				DEVELOPMENT_TEAM = 7V8U63MAQE;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Necesitamos la cámara jefe";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +320,7 @@
 				DEVELOPMENT_TEAM = 7V8U63MAQE;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Necesitamos la cámara jefe";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
