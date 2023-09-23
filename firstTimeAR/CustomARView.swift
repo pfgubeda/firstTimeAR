@@ -24,7 +24,6 @@ class CustomARView: ARView {
         fatalError("init (coder:) has not been implemented yet")
     }
     
-    // the init actually used
     convenience init(){
         self.init(frame: UIScreen.main.bounds)
         subscribeToActionStream()
@@ -44,19 +43,17 @@ class CustomARView: ARView {
                 }
             }
             .store(in: &cancellables)
-    }
+    }	
     
 
-    
     func placeCity(){
         
         if(cityAlreadyPlaced == true){
             removeCity()
         }
-        // Load the city from FirstTryExperience, force try not recommended
+
         let cityAnchor = try! FirstTryExperience.loadCity()
         
-        // Add the firstTryExperience anchor to the scene
         scene.addAnchor(cityAnchor)
         cityAlreadyPlaced = true
     }
